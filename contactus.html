@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BONSAI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+	/*------contact page styles...*/
+
+.contact-wrapper {
+    padding: 25px 0 60px 0;
+}
+.contact-content-wrapper {
+    margin-top: 50px;
+    display: flex;
+}
+
+.map-wrapper {
+    width: 50%;
+    padding: 0 15px;
+}
+.map-wrapper iframe {
+	border-radius: 10px;
+}
+
+.form-content-wrapper {
+    border: 1px solid #dddddd;
+    width: 50%;
+    padding: 25px;
+    background-color: #f5f5f5;
+}
+.form-item {
+    margin: 0 0 20px 0;
+}
+
+.form-item label {
+    margin-bottom: 10px;
+}
+
+.form-item input {
+    height: 40px;
+    width: 95%;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+.form-item textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contact-heading-wrap h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    /*text-transform: lowercase;*/
+    font-weight: 600;
+    margin-top: 10px;
+    color: #17624f;
+}
+.contact-heading-wrap p {
+	font-size: 17px;
+	color: #1b1b1b;
+	margin: 5px 10px 0;
+}
+.contact-wrapper input[type="submit"] {
+    background-color: #27725f;
+    color: #fff;
+    padding: 15px 20px;
+    height: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+.contact-wrapper input[type="submit"]:hover {
+    background-color: #3d8c7b;
+}
+/*------ end of contact page styles...*/
+
+</style>
+<body>
+
+<header class="main-header">
+	<div class="container">
+		<div class="navbar bonsai-navbar">
+			<div class="logo-wrapper">
+				<img src="images/logo.png" alt="logo">
+				<h3>Bonsai.Inc</h3>
+			</div>
+			<div class="menu-wrapper">
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="products.html">Products</a>
+						</li>
+						<li>
+							<a href="aboutus.html">About us</a>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="research.html">Research</a>
+						</li>
+						<li>
+							<a href="contactus.html">Contact us</a>
+						</li>
+				    </ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header><!--main header ends-->
+
+	<div class="custom-image-wrapper" style="background-image: url('images/custom-banner.jpg');">
+		<div class="overlay"></div>
+		<div class="container">
+			<header class="page-header">
+                <h2 class="page-title">Contact Us</h2>
+            </header>
+		</div>
+	</div>
+	<section class="contact-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="contact-heading-wrap">
+					<h4>Say hi to the team</h4>
+					<p>Feel free to contact us and we will get back to you as soon as we can.</p>
+				</div>
+				<div class="contact-content-wrapper">
+					<div class="map-wrapper">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3116869755777!2d85.32304771425784!3d27.7076612320867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1674229190421!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="form-content-wrapper">
+						<form>
+							<div class="form-item">
+								<label for="fname">Name <span class="text-danger">*</span></label>
+	  							<input type="text" id="fname" placeholder="Enter your name"  required>
+							</div>
+							<div class="form-item">
+								<label for="email" >Email <span class="text-danger">*</span></label>
+	  							<input type="email" id="email" placeholder="Enter you email"  required>
+							</div>
+							<div class="form-item">
+								<label for="message">Your Message</label>
+	  							<textarea id="textarea" name="textarea" placeholder="Enter your message" rows="4" cols="50">
+									
+								</textarea>
+							</div>
+							<div class="form-item">
+								<input type="submit" value="Send">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+
+
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-info">
+			<div class="footer-item">
+				<img src="images/logo.png">
+			</div>
+			<div class="footer-item">
+				<h4>CONTACTS</h4>
+				<ul class="contact">
+					<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h4>COMPANY</h4>
+				<ul class="company">
+					<li><a href="blog.html">Blog</a></li>
+					<li> <a href="aboutus.html">About Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h4>RESOURCES</h4>
+				<ul class="resources">
+					<li> <a href="research.html">Research</a> </li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h4>SOCIALS</h4>
+				<ul class="socials">
+					<li><a href="">Facebook</a></li>
+					<li><a href=""> Instagram</a></li>
+					<li><a href=""> twitter</a></li>
+					<li><a href="">LinkedIN</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer><!--end of footer-->
+
+</body>
+</html>

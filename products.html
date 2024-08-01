@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PRODUCTS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+/**--product page popup styles--**/
+#popup{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+.popup-body {
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+.popup-body {
+    position: relative;
+    width: auto;
+    margin: 50px;
+    pointer-events: none;
+    margin:  0 auto;
+    background-color: #0f5b46;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 300px;
+    text-align: center;
+}
+
+.popup-body h3{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+.thankyou-image img{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+}
+.popup-logo img {
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+/**--product page popup styles--**/
+</style>
+<body>
+
+<header class="main-header">
+	<div class="container">
+		<div class="navbar bonsai-navbar">
+			<div class="logo-wrapper">
+				<img src="images/logo.png" alt="logo">
+				<h3>Bonsai.Inc</h3>
+			</div>
+			<div class="menu-wrapper">
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="products.html">Products</a>
+						</li>
+						<li>
+							<a href="aboutus.html">About us</a>
+						</li>
+						<li>
+							<a href="blog.html">Blogs</a>
+						</li>
+						<li>
+							<a href="research.html">Research</a>
+						</li>
+						<li>
+							<a href="contactus.html">Contact us</a>
+						</li>
+				    </ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header><!--main header ends-->
+
+	<div class="custom-image-wrapper" style="background-image: url('images/about-banner.jpeg');">
+		<div class="overlay"></div>
+		<div class="container">
+			<header class="page-header">
+                <h2 class="page-title">Our Products</h2>
+            </header>
+		</div>
+	</div>
+	<section class="products-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
+					<h3>Our Finest Bonsais</h3>
+					<p>Surprise your valentine with a bonsai that's as beautiful as them.</p>
+				</div>
+				<div class="latest-list-content">
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant1.jpg">
+					</div>
+					<div class="item-description">
+						<h4>Juniper</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.29.00</span>
+					    </p>
+					    <button onclick="myFunction()" class="custom-btn">Buy now</button>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant2.jpg">
+					</div>
+					<div class="item-description">
+						<h4>Red Bonsai</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <button onclick="myFunction()" class="custom-btn">Buy now</button>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant3.jpg">
+					</div>
+					<div class="item-description">
+						<h4>Pink Bonsai</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <button onclick="myFunction()" class="custom-btn">Buy now</button>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant13.png">
+					</div>
+					<div class="item-description">
+						<h4>American Bonsai</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <button onclick="myFunction()" class="custom-btn">Buy now</button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section class="steals-selling-list-wrapper">
+		<div class="container">
+			<div class="section-header">
+				<h3>Our Originals</h3>
+				<p>Miniaturized and realistic represebtation of nature</p>
+			</div>
+			<div class="latest-list-content">
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant12.png">
+					</div>
+					<div class="item-description">
+						<h4>Maple</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <a href="products.html" class="custom-btn">Buy now</a>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant11.png">
+					</div>
+					<div class="item-description">
+						<h4>Red Bonsai</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <a href="products.html" class="custom-btn">Buy now</a>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/wisteria.jpg">
+					</div>
+					<div class="item-description">
+						<h4>Wisteria</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <a href="products.html" class="custom-btn">Buy now</a>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant7.jpeg">
+					</div>
+					<div class="item-description">
+						<h4>American Bonsai</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <a href="products.html" class="custom-btn">Buy now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--end top selling list-wrapper-->
+	<section class="steals-selling-list-wrapper">
+		<div class="container">
+			<div class="section-header">
+				<h3>Steals & Deals</h3>
+				<p>Buy green, save green remain clean</p>
+			</div>
+			<div class="latest-list-content">
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant8.jpeg">
+					</div>
+					<div class="item-description">
+						<h4>Juniper</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <a href="products.html" class="custom-btn">Buy now</a>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant9.jpeg">
+					</div>
+					<div class="item-description">
+						<h4>Red Bonsai</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <a href="products.html" class="custom-btn">Buy now</a>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/plant1.jpg">
+					</div>
+					<div class="item-description">
+						<h4>Pink Bonsai</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <a href="products.html" class="custom-btn">Buy now</a>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item-image">
+						<img src="images/japanese-maple.jpg">
+					</div>
+					<div class="item-description">
+						<h4>Japanese Maple</h4>
+						<p class="product-price">
+					        <span class="price">Rs.1900</span>         
+					        <span class="discount-price">Rs.2900</span>
+					    </p>
+					    <a href="products.html" class="custom-btn">Buy now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--end top selling list-wrapper-->
+
+
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer-info">
+			<div class="footer-item">
+				<img src="images/logo.png">
+			</div>
+			<div class="footer-item">
+				<h4>CONTACTS</h4>
+				<ul class="contact">
+					<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h4>COMPANY</h4>
+				<ul class="company">
+					<li><a href="blog.html">Blog</a></li>
+					<li> <a href="aboutus.html">About Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h4>RESOURCES</h4>
+				<ul class="resources">
+					<li> <a href="references.html">References</a> </li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h4>SOCIALS</h4>
+				<ul class="socials">
+					<li><a href="">Facebook</a></li>
+					<li><a href=""> Instagram</a></li>
+					<li><a href=""> twitter</a></li>
+					<li><a href="">LinkedIN</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer><!--end of footer-->
+
+
+
+<div id="popup">
+	<div class="popup-body">
+		<div class="thankyou-image">
+			<img src="images/thankyou.png">
+		</div>
+		<h3>Thankyou for Shopping with us!</h3>
+		<div class="popup-logo">
+			<img src="images/logo.png" alt="logo">
+			<h3>Bonsai.Inc</h3>
+		</div>
+	</div>
+</div>
+
+
+<!-- JS -->
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
